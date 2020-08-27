@@ -1,5 +1,5 @@
-import React from "react";
-import { Button } from "@chakra-ui/core";
+import React from "./node_modules/react";
+import { Button } from "./node_modules/@chakra-ui/core";
 
 const Landing = () => {
     return(

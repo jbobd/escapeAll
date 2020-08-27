@@ -1,7 +1,7 @@
 import React from "react";
 import { ThemeProvider, CSSReset } from "@chakra-ui/core";
 
-import Landing from "./pages/landing/Landing";
+import Landing from "./pages/Landing/Landing";
 
 
 const App = () => {
