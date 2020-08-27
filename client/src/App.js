@@ -19,7 +19,7 @@ const App = () => {
         <nav>SOY UN NAVBAR Y NO SOY DE CHAKRA</nav>
       <CSSReset />
       <Switch>
-        <Route path='login'>
+        <Route path='/login'>
           <LoginPage />
         </Route>
         <Route path='/home'>
