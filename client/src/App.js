@@ -1,16 +1,23 @@
 import React from "react";
-import { ThemeProvider, CSSReset } from "@chakra-ui/core";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Landing from "./pages/Landing/Landing";
-
+import LoginPage from "./pages/Login/Login";
 
 const App = () => {
   return (
-    <ThemeProvider>
-      <CSSReset />
-      <Landing />
-    </ThemeProvider>
+    <Router>
+      <nav>SOY UN NAVBAR Y NO SOY DE CHAKRA</nav>
+      <Switch>
+        <Route path="/login">
+          <LoginPage />
+        </Route>
+        <Route path={["/home", "/"]}>
+          <Landing />
+        </Route>
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
