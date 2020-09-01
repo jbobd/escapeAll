@@ -1,9 +1,18 @@
 import React from "react";
 
+import Navbar from "../../components/Navbar/Navbar";
+
+import "./Landing.styles.scss";
+
 const Landing = () => {
-    return(
-        <>Soy un boton de Chakra</>
-    )
+  return (
+    <div className="landing">
+      <div className="landing__hero">
+        <Navbar />
+        <section className="hero">HERO</section>
+      </div>
+    </div>
+  );
 };
 
 export default Landing;

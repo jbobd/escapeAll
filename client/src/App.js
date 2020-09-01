@@ -8,9 +8,9 @@ import Navbar from "./components/Navbar/Navbar";
 const App = () => {
   return (
     <Router>
-      <Navbar />
       <Switch>
         <Route path="/login">
+          <Navbar />
           <LoginPage />
         </Route>
         <Route path={["/home", "/"]}>
