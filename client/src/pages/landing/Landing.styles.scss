@@ -1,0 +1,25 @@
+.landing__hero {
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: linear-gradient(0.72deg, #ec7878 0.71%, #ca5d5d 0.9%);
+}
+
+.landing__hero::after {
+  content: "";
+  background: url("../../assets/keys.png");
+  background-size: cover;
+  opacity: 4.5%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+@media screen and (min-width: 600px) {
+  .landing__hero::after {
+    background-size: contain;
+    opacity: 3.5%;
+  }
+}
