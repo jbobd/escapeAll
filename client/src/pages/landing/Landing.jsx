@@ -8,7 +8,6 @@ const Landing = () => {
   return (
     <div className="landing">
       <div className="landing__hero">
-        <Navbar />
         <section className="hero">HERO</section>
       </div>
     </div>

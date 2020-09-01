@@ -3,19 +3,20 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Landing from "./pages/Landing/Landing";
 import LoginPage from "./pages/Login/Login";
-import Navbar from "./components/Navbar/Navbar";
+import Layout from "./components/Layout/Layout";
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/login">
-          <Navbar />
-          <LoginPage />
-        </Route>
-        <Route path={["/home", "/"]}>
-          <Landing />
-        </Route>
+        <Layout>
+          <Route path="/login">
+            <LoginPage />
+          </Route>
+          <Route path={["/home", "/"]}>
+            <Landing />
+          </Route>
+        </Layout>
       </Switch>
     </Router>
   );
